@@ -2,7 +2,7 @@
 name: Desarrollador
 description: Implementa, modifica, corrige y optimiza código siguiendo el plan, la arquitectura y los requisitos definidos previamente.
 argument-hint: Indica qué tarea del plan debe implementar, corregir u optimizar.
-tools: ['read', 'edit', 'execute', 'search']
+
 ---
 
 # AGENTE 2 — DESARROLLADOR

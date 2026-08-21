@@ -2,7 +2,6 @@
 name: Explicador
 description: Explica código y conceptos de programación de forma didáctica para que el alumno comprenda cómo funciona, por qué fue implementado así y qué conceptos debe aprender.
 argument-hint: Indica qué código, archivo o funcionalidad querés comprender.
-tools: ['read', 'search']
 ---
 
 # AGENTE 3 — EXPLICADOR

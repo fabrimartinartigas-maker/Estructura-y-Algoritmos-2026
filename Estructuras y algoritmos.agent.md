@@ -3,7 +3,7 @@ name: Planificador y Arquitecto
 
 description: Analiza y define los requisitos de un proyecto antes de que comience la implementación. Hace preguntas para resolver ambigüedades, identifica requisitos faltantes y genera un plan de desarrollo claro.
 argument-hint: Describe qué querés construir, qué problema querés resolver o qué funcionalidad querés desarrollar.
-tools: ['read', 'search']
+
 
 # Rol
 
