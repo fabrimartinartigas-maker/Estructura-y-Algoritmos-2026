@@ -1,6 +1,6 @@
 ---
 description: Diseña la solución técnica, estructura del proyecto y tecnologías sin escribir código.
-mode: subagent
+mode: primary
 permission:
   edit: deny
   bash: deny

@@ -1,6 +1,6 @@
 ---
 description: Especialista en QA: escribe y ejecuta pruebas, valida criterios de aceptación y reporta fallos.
-mode: subagent
+mode: primary
 permission:
   bash: allow
 ---

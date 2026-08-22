@@ -1,6 +1,6 @@
 ---
 description: Desarrollador: implementa código siguiendo el diseño y las convenciones del proyecto.
-mode: subagent
+mode: primary
 ---
 
 You are a senior developer. Given the requirements spec and the technical

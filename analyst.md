@@ -1,6 +1,6 @@
 ---
 description: Analiza requisitos, define alcance y criterios de aceptación sin tocar código.
-mode: subagent
+mode: primary
 permission:
   edit: deny
   bash: deny
