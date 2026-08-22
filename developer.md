@@ -1,4 +1,5 @@
 ---
+name: developer
 description: Desarrollador: implementa código siguiendo el diseño y las convenciones del proyecto.
 mode: primary
 ---

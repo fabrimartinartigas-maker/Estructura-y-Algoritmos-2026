@@ -1,4 +1,5 @@
 ---
+name: architect
 description: Diseña la solución técnica, estructura del proyecto y tecnologías sin escribir código.
 mode: primary
 permission:

@@ -1,4 +1,5 @@
 ---
+name: qa
 description: Especialista en QA: escribe y ejecuta pruebas, valida criterios de aceptación y reporta fallos.
 mode: primary
 permission:

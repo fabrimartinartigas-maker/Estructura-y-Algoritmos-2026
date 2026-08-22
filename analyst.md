@@ -1,4 +1,5 @@
 ---
+name: analyst
 description: Analiza requisitos, define alcance y criterios de aceptación sin tocar código.
 mode: primary
 permission:
