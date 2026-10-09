@@ -1,28 +1,47 @@
 # Unidad 1: Análisis de Algoritmos
 
-Esta guía reúne diez ejercicios para redactar prompts de OpenCode. Cada prompt solicita una implementación Java y un análisis de algoritmos; la guía no incluye esas implementaciones, porque el entregable de la consigna es construir los prompts.
+Esta guía desarrolla diez ejercicios de análisis de algoritmos sobre vectores y matrices en Java 21. Incluye consignas, prompts para OpenCode, soluciones independientes, una demostración y pruebas automatizadas.
 
 ## Contenido
 
 - [ESPECIFICACION.md](./ESPECIFICACION.md): objetivos, requisitos, restricciones y criterios de aceptación.
 - [PROMPTS.md](./PROMPTS.md): un prompt completo, listo para usar en OpenCode, por ejercicio.
+- `reso/ejercicio01/` a `reso/ejercicio10/`: implementaciones independientes. Los ejercicios 4 y 7 incluyen dos alternativas.
+- `examples/GuiaAnalisisDemo.java`: demostración separada de las soluciones.
+- `tests/GuiaAnalisisTests.java`: pruebas automatizadas sin dependencias externas.
 
-## Uso, compilación, ejecución y pruebas
+## Contenido de la guía
 
-1. Abrí [PROMPTS.md](./PROMPTS.md), copiá el prompt del ejercicio elegido y pegalo en OpenCode.
-2. El prompt solicita código Java 21 independiente, sin dependencias externas, con la implementación separada de los ejemplos y pruebas.
-3. Guardá el código generado en un archivo cuyo nombre coincida con la clase pública. Para compilarlo, desde la carpeta del archivo ejecutá:
+1. Encontrar el mínimo de un vector.
+2. Buscar linealmente un elemento en un vector desordenado e informar las posiciones inspeccionadas.
+3. Buscar binariamente en un vector ordenado e imprimir la traza de límites y puntos medios.
+4. Detectar duplicados mediante ciclos anidados y `HashSet`.
+5. Contar todas las apariciones de un valor.
+6. Comparar vectores con terminación temprana.
+7. Invertir un vector con auxiliar y en el mismo vector.
+8. Sumar una matriz e informar las sumas ejecutadas por el acumulador.
+9. Encontrar el máximo de una matriz.
+10. Ordenar con Bubble Sort e informar comparaciones e intercambios.
 
-   ```sh
-   javac --release 21 NombreDeLaClase.java
-   ```
+## Compilar
 
-4. Ejecutalo con:
+Se requiere un JDK 21. Desde esta carpeta:
 
-   ```sh
-   java NombreDeLaClase
-   ```
+```sh
+mkdir -p build
+javac --release 21 -Xlint:all -d build $(find reso examples tests -name '*.java')
+```
 
-5. Ejecutá los casos representativos y límite solicitados por el prompt y compará el resultado con el esperado. Revisá también que el análisis de complejidad y, cuando corresponda, los contadores coincidan con las operaciones efectivamente realizadas.
+## Ejecutar la demostración
 
-La compilación y las pruebas corresponden al código que genere OpenCode; esta guía no contiene código fuente compilable ni una suite de pruebas propia.
+```sh
+java -cp build unidad1.examples.GuiaAnalisisDemo
+```
+
+## Ejecutar pruebas
+
+```sh
+java -ea -cp build unidad1.tests.GuiaAnalisisTests
+```
+
+La suite informa la cantidad de verificaciones aprobadas y falla con una aserción descriptiva ante un resultado inesperado. Los prompts permanecen disponibles como material de práctica independiente; las implementaciones locales se pueden comparar con ellos y con [ESPECIFICACION.md](./ESPECIFICACION.md).
